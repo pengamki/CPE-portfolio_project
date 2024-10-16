@@ -1,0 +1,126 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #150c27;
+}
+
+/* Navigation bar */
+.navbar {
+    overflow: hidden;
+    background-color: #333;
+    font-family: monospace;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 2;
+}
+
+.navbar a {
+    float: left;
+    color: white;
+    text-align: center;
+    padding: 18px 26px;
+    text-decoration: none;
+    font-size: 22px;
+}
+
+.navbar a:hover {
+    background-color: #735ea3;
+}
+
+.navbar a.active {
+    background-color: #333194;
+}
+
+.info {
+    background-color: #3e337c;
+}
+.work {
+    background-color: #2f275e;
+}
+.call {
+    background-color: #211b44;
+}  
+
+/* Head */
+.imgContainer {
+    text-align: center;
+    position: relative;
+}
+
+.imgContainer img {
+    width: 100%;
+    display: block;
+}
+
+.toptext {
+    position: absolute;
+    top: 0;
+    margin-top: 20vw;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0);
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 56px;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+/* Content */
+section {
+    color: white;
+    text-align: center;
+    margin-bottom: 100px;
+}
+
+.about, .services, .contacts {
+    margin-top: 200px;
+    font-size: 38px;
+}
+
+/* About cat img */
+.aboutCat {
+    background-image: url("https://cdn.wallpapersafari.com/35/5/5U3l9p.jpg");
+    min-height: 400px;
+    height: 40%; 
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.services img {
+    margin-top: 70px;
+}
+
+/* Contacts */
+.callMeMaybe {
+    display: block;
+    color: white;
+    text-align: center;
+    justify-content: center;
+    font-size: 22px;
+}
+
+.callMeMaybe a {
+    text-decoration: none;
+    color: #fffa9c;
+}
+
+.callMeMaybe a:hover {
+    color: #fffa9c91;
+}
+
+.email {
+    font-style: italic;
+}
+
+/* copyright */
+footer {
+    text-align: center;
+    font-size: 20px;
+    font-family: monospace;
+    color: aliceblue;
+    margin-top: 100px;
+}
