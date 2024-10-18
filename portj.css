@@ -70,6 +70,14 @@ body {
     padding: 0;
 }
 
+.about {
+    background-color: #3e337c30;
+}
+
+.services {
+    background-color: #2f275e20;
+}
+
 .content {
     display: flex;
     justify-content: center;
@@ -79,10 +87,76 @@ body {
     font-size: 30px;
 }
 
-.about {
-    background-color: #3e337c30;
+.contacts {
+    height: 100vh;
+    display: flex;                /* Add flexbox to center the content */
+    flex-direction: column;       /* Align items vertically */
+    justify-content: center;      /* Center the form vertically */
+    align-items: center;          /* Center the form horizontally */
+    text-align: center;
 }
 
-.services {
-    background-color: #2f275e20;
+.contacts h2 {
+    font-size: 50px;
+    color: white;
+}
+
+.contacts fieldset {
+    width: 50%;
+    padding: 20px;
+    border: none;
+    border-radius: 10px;
+    background-color: #211b44;
+    color: white;
+}
+
+.contacts label {
+    font-size: 20px;
+    color: white;
+}
+
+.contacts label, .contacts input, .contacts textarea, .contacts button {
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.contacts input, .contacts textarea {
+    min-height: 5vh;
+    font-family: Arial, sans-serif;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    background-color: #19162c81;
+    color: white;
+    box-sizing: border-box;
+    margin-bottom: 30px;
+}
+
+.contacts textarea {
+    min-height: 20vh;
+}
+
+
+.contacts button {
+    width: 200px;
+    font-size: 24px;
+    display: inline-block;  /* Make sure button doesn't take up full width */
+    background-color: #735ea3;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.contacts button:hover {
+    background-color: #402575;
+}
+
+.contacts input:focus,
+.contacts textarea:focus {
+    background-color: #19162c;
+    border: #735ea3 2px solid;
+    outline: none;
 }
