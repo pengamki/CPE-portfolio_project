@@ -55,12 +55,13 @@ hamburger.addEventListener('click', () => {
     hamburger.classList.toggle('active');
 });
 
-let clickCount = 0;  // To track clicks
+let clickCount = 0;
 
 document.getElementById("click-counter").addEventListener("click", function() {
     clickCount++;
-    if (clickCount % 10 === 0) {
-        alert("You've clicked 10 times! https://www.youtube.com/watch?v=haCLEOZix4c.");
+
+    if (clickCount % 3 === 0) {
+        alert(`wolf wolf🐺`);
         clickCount = 0;
     }
-);
+});
