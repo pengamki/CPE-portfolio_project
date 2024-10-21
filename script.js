@@ -2,11 +2,12 @@ document.addEventListener('DOMContentLoaded', () => {
     const typewriterText = document.querySelector('.typewriter-text');
     const cursor = document.querySelector('.cursor');
     const sentences = [
-        "👋 Hello, I'm a wolf.",
-        "I'm a web developer.",
+        "👋 Hello.",
+        "I'm a wolf.",
+        "I'm a developer.",
         "I'm a designer.",
         "I'm a creator.",
-        "I'm a wolf."
+        "I'm a wolf🐺."
     ];
     let sentenceIndex = 0;
     let charIndex = 0;
@@ -53,3 +54,13 @@ hamburger.addEventListener('click', () => {
     navLinks.classList.toggle('open');
     hamburger.classList.toggle('active');
 });
+
+let clickCount = 0;  // To track clicks
+
+document.getElementById("click-counter").addEventListener("click", function() {
+    clickCount++;
+    if (clickCount % 10 === 0) {
+        alert("You've clicked 10 times! https://www.youtube.com/watch?v=haCLEOZix4c.");
+        clickCount = 0;
+    }
+);

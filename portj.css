@@ -75,14 +75,22 @@
         position: absolute;
         top: 66px; /* Below the navbar */
         right: 0;
-        height: 300px;
-        width: 0;
+        max-height: 300px; /* Set a max-height */
+        width: 100%;
         background-color: rgba(51, 51, 51, 0.9);
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        overflow: hidden;
-        transition: height 0.3s ease, width 0.3s ease;
+        overflow: hidden; /* Keeps hidden when not open */
+        transition: max-height 0.3s ease, opacity 0.3s ease; /* Smooth transition */
+        opacity: 0; /* Set initial opacity to 0 */
+        display: none; /* Initially hidden */
+    }
+
+    .nav-links.open {
+        display: flex; /* Change display to flex when open */
+        opacity: 1; /* Set opacity to 1 when open */
+        transition: max-height 0.3s ease, opacity 0.3s ease; /* Smooth transition for opening */
     }
 
     .nav-link {
@@ -92,12 +100,8 @@
         transition: opacity 0.3s ease;
     }
 
-    .nav-links.open {
-        width: 100%;
-    }
-
     .nav-links.open .nav-link {
-        opacity: 1;
+        opacity: 1; /* Fade in the links */
     }
 
     /* Hamburger becomes visible on mobile */
@@ -119,6 +123,8 @@
     }
 }
 
+
+
     .info {
         background-color: #3e337c88;
     }
@@ -131,33 +137,19 @@
         background-color: #211b4488;
     }
 
-    .home {
-        background-color: #40257550;
-        width: 100%;
-        margin: 0;
-        padding: 0;
-    }
-
-    .home h1 {
-        font-size: 42px;
-        color: white;
-        text-align: center;
-        margin-bottom: 10vh;
-    }
-
 /* Typewriter effect */
 .typewriter-text {
     font-family: 'Courier New', Courier, monospace; /* Typewriter-like font */
-    font-size: 32px;
+    font-size: 30px;
     white-space: nowrap; /* Ensure text stays on one line */
     overflow: hidden; /* Hide the text until it's revealed by JS */
     border-right: 3px solid transparent; /* The "cursor" effect */
-    display: inline-block; /* Ensure inline-block to work with border */
+    display: inline-block; /* Display the text inline */
 }
 
 .cursor {
     display: inline; /* Show cursor inline */
-    width: 10px; /* Adjust as needed */
+    width: 5px; /* Adjust as needed */
     background-color: white; /* Cursor color */
     animation: blink 1s step-end infinite; /* Blinking effect */
 }
@@ -180,18 +172,44 @@
         background-color: #2f275e20;
     }
 
+
+    .home {
+        background-color: #40257550;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+
+    .home p {
+        font-size: 30px;
+        color: white;
+        text-align: center;
+        margin-top: 0;
+        margin-bottom: auto;
+    }
+
+    .home button {
+        margin-top: auto;
+        font-size: 1.5em;
+        font-family: 'Courier New', Courier, monospace;
+        color: white;
+        text-align: center;
+        border: solid 10px #150c27;
+        border-radius: 50px;
+        background-color: #150c27;
+        margin-bottom: 20px;
+    }
+
     .content {
         display: flex;
-        justify-content: center;
-        align-items: center;
+        flex-direction: column;
         height: 100vh;
         color: white;
         font-size: 50px;
-    }
-
-    .content h1 {
-        font-size: 100px;
-        color: white;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        border: solid 2px #150c27;
     }
 
     .contacts {
@@ -204,7 +222,8 @@
     }
 
     .contacts h2 {
-        font-size: 50px;
+        display: flex;
+        font-size: 40px;
         color: white;
     }
 
