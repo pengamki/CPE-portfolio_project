@@ -60,8 +60,8 @@ let clickCount = 0;
 document.getElementById("click-counter").addEventListener("click", function() {
     clickCount++;
 
-    if (clickCount % 3 === 0) {
-        alert(`wolf wolf🐺`);
+    if (clickCount % 18 === 0) {
+        window.location.href = "https://www.youtube.com/watch?v=haCLEOZix4c ";
         clickCount = 0;
     }
 });

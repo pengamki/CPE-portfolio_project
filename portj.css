@@ -209,6 +209,63 @@
         justify-content: center;
         align-items: center;
         text-align: center;
+    }
+
+    .aboutme {
+        display: flex;
+        flex-direction: column;
+        height: 200vh;
+        color: white;
+        font-size: 50px;
+        align-items: center;
+        text-align: center;
+    }
+
+    .aboutme h2 {
+        font-size: 1em;
+        margin-top: 15vh;
+        margin-bottom: 5vh;
+        padding: 0;
+    }
+
+    .aboutme p {
+        font-size: 0.5em;
+        margin: 0;
+        padding: 0;
+    }
+
+    .projects {
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+        color: white;
+        font-size: 50px;
+        align-items: center;
+        text-align: center;
+    }
+
+    .projects h2 {
+        font-size: 1em;
+        margin-top: 15vh;
+        margin-bottom: 5vh;
+        padding: 0;
+    }
+
+    .projects p {
+        font-size: 0.5em;
+        margin: 0;
+        padding: 0;
+        border: solid 2px#150c27;
+    }
+
+    .proj {
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+        color: white;
+        font-size: 50px;
+        align-items: center;
+        text-align: center;
         border: solid 2px #150c27;
     }
 

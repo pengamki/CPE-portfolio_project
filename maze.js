@@ -35,6 +35,16 @@ $(document).ready(function() {
 			$("#maze").addClass("level"+levelID);
 			$("#level").text("Level "+levelID);
 		}
+		if (levelID == 4) {
+			console.log("Cheat?");
+			$("#level").text("What?"+"How?");
+			$("#maze").removeClass("normalcursor");
+			$("#maze").addClass("win");
+			$("#start").text("You found me! wolf🐺").fadeIn(50);
+			setTimeout(function () {
+				palyaReset();
+			}, 5000);
+		}
 	});
 	
 	$(".scarehere").mouseover(function() {
