@@ -234,6 +234,26 @@
         padding: 0;
     }
 
+    .about img {
+        margin-top: 100px;
+        height: 260px;
+        width: 360px;
+    }
+
+    .edu {
+        margin-top: 200px;
+    }
+
+    .edu-title {
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        padding: 0px 15px 0px 15px;
+        border: solid 10px #0b0614;
+        border-radius: 30px;
+        background-color: #0b0614;
+        font-size: 1.5em;
+        color: #ffd341;
+    }
+
     .projects {
         display: flex;
         flex-direction: column;
@@ -286,6 +306,10 @@
     }
 
     @media (max-width: 768px) {
+
+        .aboutme {
+            height: 300vh;
+        }
 
         .projects {
             height: 170vh;
